@@ -7,7 +7,7 @@ import { clearError } from '../../redux/actions';
 function ErrorDisplay({ error, clearError }) {
   return (
     <Snackbar
-      open={error}
+      open={!!error}
       onClose={clearError}
       anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
     >

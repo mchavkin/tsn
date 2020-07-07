@@ -28,9 +28,7 @@ function ServersTable({ servers }) {
           <TableRow key={row.name + row.distance}>
             <TableCell align="left">{row.name}</TableCell>
             <TableCell align="right">
-              {row.distance}
-              {' '}
-              km
+              {`${row.distance} km`}
             </TableCell>
           </TableRow>
         ))}
