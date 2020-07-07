@@ -73,6 +73,7 @@ function LoginPage(props) {
               placeholder="Username"
               autoFocus
               icon={PersonIcon}
+              data-testid="username"
             />
             <LoginInput
               type="password"
@@ -81,6 +82,7 @@ function LoginPage(props) {
               id="password"
               placeholder="Password"
               icon={LockIcon}
+              data-testid="password"
             />
             <Button
               type="submit"
@@ -89,6 +91,7 @@ function LoginPage(props) {
               color="primary"
               className={classes.submit}
               disabled={props.disabled}
+              data-testid="login-button"
             >
               Log In
             </Button>

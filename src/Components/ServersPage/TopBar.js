@@ -38,6 +38,7 @@ function Servers(props) {
           className={classes.logoutButton}
           onClick={props.logout}
           startIcon={<Icon><img src={logoutIcon} alt="<-" /></Icon>}
+          data-testid="logout-button"
         >
           Logout
         </Button>
