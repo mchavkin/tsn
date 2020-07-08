@@ -13,7 +13,7 @@ function ErrorDisplay({ error, clearError }) {
     >
       {error
             && (
-            <MuiAlert elevation={6} variant="filled" severity={error.severity} onClose={clearError}>
+            <MuiAlert elevation={6} variant="filled" severity={error.severity} onClose={clearError} data-testid="error">
               {error.message}
             </MuiAlert>
             )}
